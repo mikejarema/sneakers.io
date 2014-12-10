@@ -554,6 +554,67 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-chunk {
   color: #aaa;
 }
+.hll { background-color: #ffffcc }
+.c { color: #999988; font-style: italic } /* Comment */
+.err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.k { color: #000000; font-weight: bold } /* Keyword */
+.o { color: #000000; font-weight: bold } /* Operator */
+.cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
+.c1 { color: #999988; font-style: italic } /* Comment.Single */
+.cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.ge { color: #000000; font-style: italic } /* Generic.Emph */
+.gr { color: #aa0000 } /* Generic.Error */
+.gh { color: #999999 } /* Generic.Heading */
+.gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.go { color: #888888 } /* Generic.Output */
+.gp { color: #555555 } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #aaaaaa } /* Generic.Subheading */
+.gt { color: #aa0000 } /* Generic.Traceback */
+.kc { color: #000000; font-weight: bold } /* Keyword.Constant */
+.kd { color: #000000; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #000000; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #000000; font-weight: bold } /* Keyword.Pseudo */
+.kr { color: #000000; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.m { color: #009999 } /* Literal.Number */
+.s { color: #d01040 } /* Literal.String */
+.na { color: #008080 } /* Name.Attribute */
+.nb { color: #0086B3 } /* Name.Builtin */
+.nc { color: #445588; font-weight: bold } /* Name.Class */
+.no { color: #008080 } /* Name.Constant */
+.nd { color: #3c5d5d; font-weight: bold } /* Name.Decorator */
+.ni { color: #800080 } /* Name.Entity */
+.ne { color: #990000; font-weight: bold } /* Name.Exception */
+.nf { color: #990000; font-weight: bold } /* Name.Function */
+.nl { color: #990000; font-weight: bold } /* Name.Label */
+.nn { color: #555555 } /* Name.Namespace */
+.nt { color: #000080 } /* Name.Tag */
+.nv { color: #008080 } /* Name.Variable */
+.ow { color: #000000; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #009999 } /* Literal.Number.Float */
+.mh { color: #009999 } /* Literal.Number.Hex */
+.mi { color: #009999 } /* Literal.Number.Integer */
+.mo { color: #009999 } /* Literal.Number.Oct */
+.sb { color: #d01040 } /* Literal.String.Backtick */
+.sc { color: #d01040 } /* Literal.String.Char */
+.sd { color: #d01040 } /* Literal.String.Doc */
+.s2 { color: #d01040 } /* Literal.String.Double */
+.se { color: #d01040 } /* Literal.String.Escape */
+.sh { color: #d01040 } /* Literal.String.Heredoc */
+.si { color: #d01040 } /* Literal.String.Interpol */
+.sx { color: #d01040 } /* Literal.String.Other */
+.sr { color: #009926 } /* Literal.String.Regex */
+.s1 { color: #d01040 } /* Literal.String.Single */
+.ss { color: #990073 } /* Literal.String.Symbol */
+.bp { color: #999999 } /* Name.Builtin.Pseudo */
+.vc { color: #008080 } /* Name.Variable.Class */
+.vg { color: #008080 } /* Name.Variable.Global */
+.vi { color: #008080 } /* Name.Variable.Instance */
+.il { color: #009999 } /* Literal.Number.Integer.Long */
 
 /* Bitters 0.10.0
  * http://bitters.bourbon.io
@@ -843,8 +904,8 @@ html {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.2.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
+  src: url("/fonts/fontawesome-webfont.eot?v=4.2.0");
+  src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("/fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* line 4, /Users/dotan/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/font-awesome-middleman-4.2.3/app/assets/stylesheets/font-awesome/_core.scss */
@@ -3492,33 +3553,33 @@ header.navigation {
           box-sizing: border-box;
           display: block; } }
 
-/* line 26, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 28, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 h1, h2, h3, h4, h5 {
   margin: 1em 0;
   font-weight: 400; }
 
-/* line 31, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 33, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 h1, h2, h3, h4 {
   font-weight: 100; }
 
-/* line 35, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 37, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 body {
   background: #fff; }
 
-/* line 39, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 41, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 code {
   font-size: 14px; }
 
-/* line 43, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 45, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 #hero {
   text-align: center;
   margin-top: 6em; }
-  /* line 46, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+  /* line 48, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
   #hero h1 {
     font-size: 3em;
     font-weight: 100; }
 
-/* line 52, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 54, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .content {
   max-width: 68em;
   margin-left: auto;
@@ -3529,7 +3590,7 @@ code {
     display: table;
     clear: both; }
 
-/* line 56, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 58, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .quickstart-steps {
   float: left;
   display: block;
@@ -3539,25 +3600,25 @@ code {
   /* line 85, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/neat/grid/_span-columns.scss */
   .quickstart-steps:last-child {
     margin-right: 0; }
-  /* line 59, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+  /* line 61, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
   .quickstart-steps div {
     margin: 1.5em 0 0.3em 0;
     padding: 0;
     color: #989898;
     font-weight: normal; }
-  /* line 65, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+  /* line 67, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
   .quickstart-steps pre {
     margin: 0; }
 
-/* line 70, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 72, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 #quickstart {
   padding: 4em 0; }
 
-/* line 74, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 76, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 #features {
   background: #fff;
   padding: 4em 0; }
-  /* line 77, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+  /* line 79, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
   #features .bullets {
     margin-left: 8.5298%;
     float: left;
@@ -3567,21 +3628,21 @@ code {
     /* line 85, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/neat/grid/_span-columns.scss */
     #features .bullets:last-child {
       margin-right: 0; }
-  /* line 82, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+  /* line 84, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
   #features .bullet-content h4 {
     text-align: center; }
 
-/* line 88, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 90, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 #learn {
   padding: 4em 0;
   background: #fff; }
 
-/* line 93, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 95, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 #using {
   padding: 4em 0;
   background: #fff; }
 
-/* line 97, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 99, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .using-join {
   float: left;
   display: block;
@@ -3593,20 +3654,20 @@ code {
   .using-join:last-child {
     margin-right: 0; }
 
-/* line 103, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 105, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .faq {
   padding: 2em;
   background: #ea2743;
   color: #fff; }
-  /* line 107, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+  /* line 109, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
   .faq a, .faq a:link, .faq a:visited, .faq a:hover {
     color: #fff; }
 
-/* line 112, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 114, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .blogitem-content {
   margin-bottom: 2em; }
 
-/* line 116, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 118, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .comments-close {
   margin-left: 8.5298%;
   float: left;
@@ -3617,7 +3678,7 @@ code {
   .comments-close:last-child {
     margin-right: 0; }
 
-/* line 120, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 122, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .comments-far {
   float: left;
   display: block;
@@ -3627,13 +3688,13 @@ code {
   .comments-far:last-child {
     margin-right: 0; }
 
-/* line 124, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 126, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .sectiontitle {
   margin: 2em 0;
   margin-top: 0;
   text-align: center; }
 
-/* line 130, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 132, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .articles {
   margin-left: 8.5298%;
   float: left;
@@ -3644,26 +3705,26 @@ code {
   .articles:last-child {
     margin-right: 0; }
 
-/* line 138, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 140, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .blog-minihero {
   text-align: center;
   margin-bottom: 6em; }
 
-/* line 142, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 144, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .blog-socials {
   margin: 1em 0;
   font-size: 1.5em; }
-  /* line 16, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+  /* line 18, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
   .blog-socials > li {
     display: inline-block; }
-  /* line 144, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+  /* line 146, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
   .blog-socials li {
     margin: 0 0.3em; }
-  /* line 149, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+  /* line 151, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
   .blog-socials a, .blog-socials a:visited, .blog-socials a:link, .blog-socials a:hover {
     color: #000; }
 
-/* line 156, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 158, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .blog-content {
   padding: 0 1em;
   margin: 3em 0;
@@ -3671,7 +3732,7 @@ code {
   margin-left: auto;
   margin-right: auto; }
   @media screen and (min-width: 53.75em) {
-    /* line 156, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+    /* line 158, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
     .blog-content {
       padding: 0; } }
   /* line 15, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/bourbon/addons/_clearfix.scss */
@@ -3681,7 +3742,7 @@ code {
     clear: both; }
 
 @media screen and (min-width: 53.75em) {
-  /* line 165, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+  /* line 167, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
   .blog-main {
     margin-left: 8.5298%;
     float: left;
@@ -3691,18 +3752,18 @@ code {
     /* line 85, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/neat/grid/_span-columns.scss */
     .blog-main:last-child {
       margin-right: 0; } }
-/* line 170, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 172, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .blog-main ul li {
   list-style-type: disc; }
-/* line 173, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 175, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .blog-main ol li {
   list-style-type: decimal; }
-/* line 176, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 178, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .blog-main ul, .blog-main ol {
   margin: 1em 0; }
 
 @media screen and (min-width: 53.75em) {
-  /* line 182, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+  /* line 184, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
   .blog-aside {
     float: left;
     display: block;
@@ -3715,46 +3776,46 @@ code {
     .blog-aside:last-child {
       margin-right: 0; } }
 
-/* line 191, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 193, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 h1.article-title {
   margin: 0; }
 
-/* line 195, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 197, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .article_head {
   display: inline-block;
   vertical-align: middle;
   line-height: 32px;
   margin: 1em 0; }
-  /* line 200, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+  /* line 202, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
   .article_head img {
     margin-top: -4px;
     vertical-align: middle; }
-  /* line 204, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+  /* line 206, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
   .article_head a, .article_head a:visited, .article_head a:link, .article_head a:hover {
     color: #000; }
 
-/* line 208, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 210, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .article_head-author {
   display: table-cell; }
-  /* line 210, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+  /* line 212, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
   .article_head-author img {
     border-radius: 50%; }
 
-/* line 214, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 216, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .article_head-date {
   padding-left: 0.5em;
   display: table-cell; }
 
-/* line 219, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 221, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .article_head---small h1 {
   font-size: 1.25em;
   font-weight: 400; }
 
-/* line 225, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 227, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 header.navigation .logo img {
   padding: 1.35em 0;
   width: 51px; }
 
-/* line 230, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
+/* line 232, /Users/dotan/projects/sneakers/sneakers.io/source/stylesheets/app.scss */
 .blog-recent li {
   margin: 1em 0; }
