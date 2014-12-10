@@ -1,8 +1,0 @@
-{
-  "name": "sneakers_web",
-  "version": "",
-  "dependencies": {
-    "highlightjs": "~8.3.0",
-    "normalize-css": "~3.0.2"
-  }
-}
